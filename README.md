@@ -6,5 +6,4 @@ The Internet of Things (IoT) is a network of physical devices connected to the i
 ------------------------------------------------------------------------
 
 # Contents
-- [Node-RED Installation Locally](LocalNodeRed/) – Step-by-step guide to install and run Node-RED on Windows/Linux/Mac
-- Node-RED on Raspberry Pi – Complete setup and IoT projects using Node-RED with GPIO and sensors
+- [Node-RED Installation Locally](LocalNodeRed/) – Step-by-step guide to install and run Node-RED on Windows/Linux
