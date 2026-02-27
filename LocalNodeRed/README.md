@@ -2,6 +2,10 @@
 
 Cloud Computing and Node-RED
 
+## What is Node-RED?
+
+Node-RED is a visual programming tool developed by IBM that allows developers to connect hardware devices, APIs, and online services in a simple and intuitive way. It provides a browser-based flow editor where users can drag and drop pre-built nodes to create workflows, making it easy to wire together data streams without writing complex code. Built on Node.js, Node-RED is lightweight and can run on various platforms from local computers to low-power devices like Raspberry Pi. With its rich library of over 225,000 modules, support for protocols like MQTT and HTTP, and built-in dashboard for visualization, Node-RED has become one of the most popular tools for IoT development, enabling both beginners and experts to quickly prototype and deploy IoT solutions.
+
 ------------------------------------------------------------------------
 
 # Requirements
