@@ -1,5 +1,6 @@
 # Introduction to IoT, 2026
 
+
 Cloud Computing and Node-RED
 
 ## What is Node-RED?
