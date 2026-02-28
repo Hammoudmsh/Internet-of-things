@@ -60,7 +60,9 @@ Install either conda or usse python env.
     - check https://www.anaconda.com/docs/getting-started/miniconda/install
     - for windows: curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe --output .\Miniconda3-latest-Windows-x86_64.exe
         - run *.exe file
-        
+    - add conda to system envirements, while instalation or you should use the absolute path to conda: ..../condabin/conda.
+    - you can also add it manullay to system envirements. 
+	   
 - check installation: 
 
     ```
@@ -77,10 +79,20 @@ Install either conda or usse python env.
 
  ------------------------------------------------------------------------
 
-## 3.  creat envirement (conda, virtualenv, ...)
+## 3.  creat envirement (conda, virtualenv, ...) with one of the following:
 1 - Conda
 ```
 conda create --name nodeRed_env python=3.10.0 -y
+
+Note: you may need to run:
+
+```
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2
+```
+
+
 conda activate nodeRed_env
 ```
 
@@ -136,6 +148,8 @@ check where node is installed.
 where node
 ```
 ![alt text](imgs/image-1.png)
+
+verify that you see the node path which exist inside the virtual envirement, here "nodeRed_env".
 
 
 
