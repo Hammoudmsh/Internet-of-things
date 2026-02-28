@@ -61,7 +61,9 @@ Install either conda or usse python env.
     - check https://www.anaconda.com/docs/getting-started/miniconda/install
     - for windows: curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe --output .\Miniconda3-latest-Windows-x86_64.exe
         - run *.exe file
-    - add conda to system envirements, while instalation or you should use the absolute path to conda: ..../condabin/conda.
+
+        ![alt text](imgs/conda.PNG)
+    - add conda to system envirements, while instalation ("Add installation to my PATH...") or you should use the absolute path to conda: ..../condabin/conda.
     - you can also add it manullay to system envirements. 
 	   
 - check installation: 
@@ -84,8 +86,12 @@ Install either conda or usse python env.
 1 - Conda
 ```
 conda create --name nodeRed_env python=3.10.0 -y
+```
 
 Note: you may need to run:
+
+![alt text](imgs/conda_channels.PNG)
+
 
 ```
 conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
@@ -93,7 +99,8 @@ conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2
 ```
 
-
+activate the envirement.
+```
 conda activate nodeRed_env
 ```
 
@@ -183,135 +190,6 @@ Welcome to Node-RED. The server runs locally at: http://127.0.0.1:1880
 
 
 
-
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-https://docs.conda.io/en/latest/miniconda.html
-Python 3.x version
-
-
-    conda --version
-    conda 24.x.x
-
-
-## Windows Installation (PowerShell as Administrator)
-
-### 1. Install virtualenv (if needed)
-
-    pip install virtualenv
-
-### 2. Create a virtual environment
-
-    mkdir Lab4 &&  cd Lab4
-    python -m venv nodeRed_env
-
-### 3. Activate the environment
-
-**Windows:**
-
-    nodeRed_env\Scripts\activate
-
-**Linux:**
-
-    source nodeRed_env/bin/activate
-
-If scripts cannot be executed in PowerShell:
-
-    Set-ExecutionPolicy RemoteSigned
-
-Type `A` to confirm.
-
-------------------------------------------------------------------------
-
-### 4. Install nodeenv
-
-    pip install nodeenv==1.9.1
-    nodeenv -p
-
-### 5. Verify Node.js and NPM versions
-
-    node --version &  npm --version
-
-Expected: - Node.js → v20.11.1 - NPM → 10.2.4
-
-------------------------------------------------------------------------
-
-### 6. Install Node-RED
-
-    npm install -g --unsafe-perm node-red@3.1.5
-
-### 7. Install Required Node-RED Packages
-
-    npm install node-red-dashboard
-    npm install node-red-contrib-calc
-    npm install node-red-contrib-telegrambot --save
-
-### 8. Install Python Libraries
-
-    pip install requests
-    pip install numpy
-
-------------------------------------------------------------------------
-
-### 9. Run Node-RED
-
-    node-red
-
-You should see:
-
-    Welcome to Node-RED
-
-The server runs locally at:
-
-    http://127.0.0.1:1880
-
-------------------------------------------------------------------------
-
-# Install Curl
-
-**Tested version:** 8.9.1 (Windows)
-
-Download from: https://curl.se/download.html
-
-OR
-
-use direct download: https://curl.se/windows/dl-8.12.1_3/curl-8.12.1_3-win64-mingw.zip
-
-unpack it -> go inside bin/ folder -> you find curl.exe, here you can open ccommand line.
-
-## Check if Curl is installed
-
-**Windows:**
-
-    curl --version
-    OR
-    curl -V
-
-**Linux / Mac:**
-
-    sudo apt update
-    sudo apt install curl
-
-OUTPUT:
-
-![alt text](imgs/image.png)
-
-## Test Curl Installation
-
-    curl -iX GET "https://www.example.com" -H "accept: application/json"
-
-------------------------------------------------------------------------
-
 # Reference
 
 Node environment documentation:\
@@ -319,41 +197,11 @@ https://nodered.org/
 
 https://nbdime.readthedocs.io/en/latest/nodevenv.html
 
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 
 
 
-
-
-
-
-Install curl
-
-
-
-
-
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe --output .\Miniconda3-latest-Windows-x86_64.exe
-
-
-install python 3.14.3: https://www.python.org/downloads/release/pymanager-260/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Do not forget to vote in the Telegram poll to confirm that everything is
-installed correctly.
